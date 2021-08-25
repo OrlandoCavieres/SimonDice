@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Dice</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-elemento">
+            <text><b>Jugador:</b></text>
+            <span id="nombreJugador"></span>
+        </div>
+        <div class="header-elemento">
+            <text><b>Nivel:</b></text>
+            <span id="nivel">0</span>
+        </div>
+        <div class="header-elemento">
+            <text><b>Puntos:</b></text>
+            <span id="puntos">0</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-gameboard">
+            <div id="celeste" class="color celeste left" data-color="celeste"></div>
+            <div id="violeta" class="color violeta right" data-color="violeta"></div>
+            <div id="naranja" class="color naranja left" data-color="naranja"></div>
+            <div id="verde" class="color verde right" data-color="verde"></div>
+            <button id="botonEmpezar" class="boton-start" onclick="empezarJuego()">Empezar a jugar!</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="Juego.js"></script>
+</body>
+</html>
